@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Подтверждение регистрации</title>
+</head>
+<body>
+    <h2>Добро пожаловать, {{ user.username }}!</h2>
+    <p>Благодарим вас за регистрацию на нашем сайте.</p>
+    <p>Ваш код подтверждения: <strong>{{ verification_code }}</strong></p>
+    <p>Или перейдите по ссылке для подтверждения:</p>
+    <p><a href="{{ verification_url }}?code={{ verification_code }}">Подтвердить email</a></p>
+    <p>Если вы не регистрировались на нашем сайте, проигнорируйте это письмо.</p>
+</body>
+</html>
